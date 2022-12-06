@@ -1,6 +1,5 @@
 import time
 import os
-import torch.backends.cudnn as cudnn
 import torch.optim
 from models.ClassifierNet import Net, Bottleneck
 import args_parser
