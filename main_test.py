@@ -61,7 +61,6 @@ def main():
     data_sar = addZeroPadding(data_sar, margin)
     data_gt = np.pad(data_gt, ((margin, margin), (margin, margin)), 'constant', constant_values=(0, 0))
 
-
     idx, idy = np.where(data_gt != 0)
     labelss = np.array([0])
 
