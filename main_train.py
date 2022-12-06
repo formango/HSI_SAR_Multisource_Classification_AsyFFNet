@@ -44,7 +44,6 @@ def train(model, device, train_loader, optimizer, epoch, slim_params, bn_thresho
     slim_params_list = np.array(sorted(slim_params_list))
     #  print (slim_params, len(slim_params))
     print('Epoch %d, 3%% smallest slim_params: %.4f' % (epoch, slim_params_list[len(slim_params_list) // 33]), flush=True, end= " ")
-    print('  Portion of slim_params < %.e: %.4f' % ( bn_threshold,  sum(slim_params_list < bn_threshold) / len(slim_params_list)), flush=True, end= " ")
     print('  [loss avg: %.4f]   [current loss: %.4f]' %( total_loss/(epoch+1), loss.item()))
 
 def test(model, device, test_loader):
