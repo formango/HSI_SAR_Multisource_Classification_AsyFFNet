@@ -98,7 +98,7 @@ def main():
     end2 = time()
     minutes = int((end2 - end) / 60)
     seconds = int((end2 - end) - minutes * 60)
-    print("Running time：", minutes, "分", seconds, "秒")
+    print("Running time：", minutes, "m", seconds, "s")
 
 if __name__ == '__main__':
     main()
