@@ -25,7 +25,7 @@ def args_parser():
 
     # dataset setting
     parser.add_argument('--patch_size', type=int, default=11,
-                        help='samples for validation')
+                        help='image patch size')
     parser.add_argument('--batch_size', type=int, default=100)
     parser.add_argument('--test_ratio', type=int, default=0.2,
                         help='samples for validation')
